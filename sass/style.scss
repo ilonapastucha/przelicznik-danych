@@ -1,5 +1,5 @@
 body {
-	padding: 10px;
+	padding: 20px;
 	text-align: center;
 }
 
@@ -15,8 +15,8 @@ button {
     vertical-align: middle;
 
 	color: #fff;
-    background-color: #02ac46;
-	border: 2px solid #02ac46;
+    background-color: mediumspringgreen;
+	border: 2px solid mediumspringgreen;
     border-radius: 4px;
     
 	transition: color .3s, background-color .3s;
@@ -28,7 +28,7 @@ button {
     user-select: none;
 	
 	&:hover, &:active {
-		color:aquamarine;
+		color: mediumseagreen;
 		background-color: #ffff;
 	}
 }
