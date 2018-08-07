@@ -44,7 +44,7 @@ btn.addEventListener('click', function(){
 	convert = window.prompt('What is the temperature in Fahrenheit?');
 	writer.innerHTML = '';
 
-	if (isNaN(temperature) || convert === '' || convert == null || convert == NaN){
+	if (isNaN(convert) || convert === '' || convert == null || convert == NaN){
 	writer.innerHTML = 'No value entered!' + '<br><br>' + writer.innerHTML;
 	}
 	else {
