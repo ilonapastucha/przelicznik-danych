@@ -17,7 +17,7 @@ writer.innerHTML = 'Click the button to convert!' + '<br><br>' + writer.innerHTM
 
 button.addEventListener('click', function(){
 	temperature = window.prompt('What is the temperature in Celsius?');
-		
+	output.innerHTML ='';	
 	if ( isNaN(temperature) || temperature === '' || temperature == null || temperature === NaN) {
 	    output.innerHTML = 'No value entered!' + '<br><br>' + output.innerHTML;
 	}
@@ -42,6 +42,7 @@ button.addEventListener('click', function(){
 
 btn.addEventListener('click', function(){
 	convert = window.prompt('What is the temperature in Fahrenheit?');
+	writer.innerHTML = '';
 
 	if (isNaN(temperature) || convert === '' || convert == null || convert == NaN){
 	writer.innerHTML = 'No value entered!' + '<br><br>' + writer.innerHTML;
