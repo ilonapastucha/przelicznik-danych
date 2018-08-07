@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var output = document.getElementById('greeter-output');
 
@@ -12,8 +12,8 @@ var btn = document.getElementById('green-button');
 
 var convert; 
 
-var write = document.getElementById('green-output');
-writer.innerHTML = 'Click the button to convert!' + '<br><br>' + write.innerHTML;
+var writer = document.getElementById('green-output');
+writer.innerHTML = 'Click the button to convert!' + '<br><br>' + writer.innerHTML;
 
 button.addEventListener('click', function(){
 	temperature = window.prompt('What is the temperature in Celsius?');
@@ -45,25 +45,24 @@ btn.addEventListener('click', function(){
 	convert = window.prompt('What is the temperature in Fahrenheit?');
 	
 	if (convert <= 32) {
-		write.innerHTML = 'State of water concentration: ice.' + '<br><br>' + write.innerHTML;
+		writer.innerHTML = 'State of water concentration: ice.' + '<br><br>' + writer.innerHTML;
 	} else if (convert < 212) {
-		write.innerHTML = 'State of water concentration: liquid.' + '<br><br>' + write.innerHTML;
+		writer.innerHTML = 'State of water concentration: liquid.' + '<br><br>' + writer.innerHTML;
 	} else if (convert >= 212) {
-		write.innerHTML = 'State of water concentration: gas.' + '<br><br>' + write.innerHTML;
+		writer.innerHTML = 'State of water concentration: gas.' + '<br><br>' + writer.innerHTML;
 	}
 	if (temperature  <=5) {
-		write.innerHTML = 'At this temperature we have winter.' + '<br><br>' + write.innerHTML;
+		writer.innerHTML = 'At this temperature we have winter.' + '<br><br>' + writer.innerHTML;
 	} else if (convert >5 && convert <=15) {
-		write.innerHTML = 'At this temperature we have autumn.' + '<br><br>' + writet.innerHTML;
+		writer.innerHTML = 'At this temperature we have autumn.' + '<br><br>' + writer.innerHTML;
 	} else if (temperature > 15) {
-		write.innerHTML = 'At this temperature we have summer' + '<br><br>' + write.innerHTML;
+		writer.innerHTML = 'At this temperature we have summer' + '<br><br>' + writer.innerHTML;
 	}
 	
 	if ( convert === '' || convert == null || convert === NaN){
-	write.innerHTML = 'No value entered!' + '<br><br>' + write.innerHTML;
+	writer.innerHTML = 'No value entered!' + '<br><br>' + writer.innerHTML;
 	}
 	else {
-	write.innerHTML = 'Your temperature in Fahrenheit is '+convert+' in Celsius is '+((convert - 32)/ 1.8)+ '!' + '<br><br>' + write.innerHTML; 
+	writer.innerHTML = 'Your temperature in Fahrenheit is '+convert+' in Celsius is '+((convert - 32)/ 1.8)+ '!' + '<br><br>' + writer.innerHTML; 
 	}
 }); 
-
